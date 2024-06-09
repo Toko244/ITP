@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/css/prettyPhoto.min.css">
+
+    <title>Document</title>
+
+    <!-- here width will come from the back as well as progress -> {{ $post->progress }} -->
+    <style>
+        @keyframes fillProgress {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 74%;
+            }
+        }
+
+        .qodef-container {
+            z-index: 101;
+        }
+
+        .qodef-container-inner {
+            width: 1300px;
+            margin: 0 auto;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: white;
+            padding: 50px;
+            -webkit-transform: translateY(-80px);
+            -ms-transform: translateY(-80px);
+            transform: translateY(-80px);
+        }
+
+        .qodef-page-title {
+            padding-bottom: 80px
+        }
+
+        .widget {
+            margin: 0;
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+    <div class="qodef-wrapper-inner">
+        <!-- Above Header Section Start -->
+        <div class="qodef-top-bar">
+            <div class="qodef-vertical-align-containers">
+                <div class="qodef-position-left">
+                    <!--
+				 -->
+                    <div class="qodef-position-left-inner">
+                        <a class="qodef-icon-widget-holder" href="mailto:director@iberiatoursplus.ge" target="_self"
+                            style="margin: 0 20px 0 0">
+                            <span class="qodef-icon-element icon_mail_alt" style="font-size: 14px"><i
+                                    class="fa-regular fa-envelope"></i></i></span>
+                            <span class="qodef-icon-text">director@iberiatoursplus.ge</span>
+                        </a>
+
+                        <a class="qodef-icon-widget-holder" href="tel:+995577477288" target="_self"
+                            style="margin: 0 20px 0 0">
+                            <span class="qodef-icon-element icon_phone" style="font-size: 14px"><i
+                                    class="fa-solid fa-phone"></i></span>
+                            <span class="qodef-icon-text">+995 577 47 72 88</span>
+                        </a>
+
+                        <a class="qodef-icon-widget-holder" href="#" target="_blank" style="margin: 0 20px 0 0">
+                            <span class="qodef-icon-element icon_pin_alt" style="font-size: 14px"><i
+                                    class="fa-solid fa-location-dot"></i></span>
+                            <span class="qodef-icon-text">Georgia</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="qodef-position-right">
+                    <!--
+				 -->
+                    <div class="qodef-position-right-inner">
+                        <a class="qodef-social-icon-widget-holder qodef-icon-has-hover"
+                            style="font-size: 13px; margin: 0 16px 0 0" href="https://twitter.com/SelectThemes?lang=en"
+                            target="_blank">
+                            <span class="qodef-social-icon-widget fab fa-twitter"></span>
+                        </a>
+                        <a class="qodef-social-icon-widget-holder qodef-icon-has-hover"
+                            style="font-size: 13px; margin: 0 16px 0 0" href="https://www.pinterest.com/selectthemes/"
+                            target="_blank">
+                            <span class="qodef-social-icon-widget fab fa-pinterest-p"></span>
+                        </a>
+                        <a class="qodef-social-icon-widget-holder qodef-icon-has-hover"
+                            style="font-size: 13px; margin: 0 16px 0 0" href="https://www.facebook.com/select.themes.7"
+                            target="_blank">
+                            <span class="qodef-social-icon-widget fab fa-facebook-f"></span>
+                        </a>
+                        <a class="qodef-social-icon-widget-holder qodef-icon-has-hover"
+                            style="font-size: 13px; margin: 0 35px 0 0" href="https://www.instagram.com/selectthemes/"
+                            target="_blank">
+                            <span class="qodef-social-icon-widget fab fa-instagram"></span>
+                        </a>
+                        <div id="custom_html-2" class="widget_text widget widget_custom_html qodef-top-bar-widget">
+                            <div class="textwidget custom-html-widget">
+                                <div class="widget widget_icl_lang_sel_widget">
+                                    <div class="wpml-ls-sidebars-qodef-header-widget-area-one wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown"
+                                        id="lang_sel">
+                                        <ul>
+                                            <li tabindex="0"
+                                                class="wpml-ls-slot-qodef-header-widget-area-one wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown">
+                                                <a href="#"
+                                                    class="js-wpml-ls-item-toggle wpml-ls-item-toggle lang_sel_sel icl-en"><span
+                                                        class="wpml-ls-native icl_lang_sel_native">English
+                                                        <i class="fa-solid fa-chevron-down"></i></span></a>
+                                                <ul class="wpml-ls-sub-menu">
+                                                    <li
+                                                        class="icl-fr wpml-ls-slot-qodef-header-widget-area-one wpml-ls-item wpml-ls-item-fr">
+                                                        <a href="#" class="wpml-ls-link"><span
+                                                                class="wpml-ls-display icl_lang_sel_translated">French</span></a>
+                                                    </li>
+                                                    <li
+                                                        class="icl-de wpml-ls-slot-qodef-header-widget-area-one wpml-ls-item wpml-ls-item-de">
+                                                        <a href="#" class="wpml-ls-link"><span
+                                                                class="wpml-ls-display icl_lang_sel_translated">German</span></a>
+                                                    </li>
+                                                    <li
+                                                        class="icl-it wpml-ls-slot-qodef-header-widget-area-one wpml-ls-item wpml-ls-item-it wpml-ls-last-item">
+                                                        <a href="#" class="wpml-ls-link"><span
+                                                                class="wpml-ls-display icl_lang_sel_translated">Italian</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget qodef-login-register-widget qodef-user-not-logged-in">
+                            <a href="#" class="qodef-login-opener">
+                                <svg version="1.1" x="0px" y="0px" viewBox="0 0 23 23" enable-background="new 0 0 23 23"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path fill="currentColor" d="M11.5,14.1c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C15.5,12.3,13.7,14.1,11.5,14.1z M11.5,7.3
+            c-1.6,0-2.8,1.3-2.8,2.8c0,1.6,1.3,2.8,2.8,2.8s2.8-1.3,2.8-2.8C14.3,8.5,13,7.3,11.5,7.3z"></path>
+                                        <path fill="currentColor" d="M11.5,23c-3.1,0-5.9-1.2-8.1-3.4c-2.2-2.2-3.4-5-3.4-8.1s1.2-5.9,3.4-8.1c2.2-2.2,5-3.4,8.1-3.4
+            s5.9,1.2,8.1,3.4c2.2,2.2,3.4,5,3.4,8.1s-1.2,5.9-3.4,8.1C17.4,21.8,14.5,23,11.5,23z M11.5,1.2C5.8,1.2,1.2,5.9,1.2,11.5
+            s4.6,10.3,10.3,10.3s10.3-4.6,10.3-10.3S17.1,1.2,11.5,1.2z"></path>
+                                        <path fill="currentColor" d="M11.5,23c-1.5,0-2.9-0.3-4.2-0.8c-0.2-0.1-0.4-0.3-0.4-0.6v-5.3c0-1.8,1.5-3.3,3.3-3.3h2.6
+            c1.8,0,3.3,1.5,3.3,3.3v5.3c0,0.2-0.1,0.5-0.4,0.6C14.4,22.7,12.9,23,11.5,23z M8.1,21.2c1.1,0.4,2.2,0.6,3.4,0.6s2.3-0.2,3.4-0.6
+            v-4.9c0-1.2-0.9-2.1-2.1-2.1h-2.6c-1.2,0-2.1,0.9-2.1,2.1V21.2z"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Above Header Section End -->
+
+        <!-- Header Start -->
+        <header class="qodef-page-header">
+            <div class="qodef-menu-area qodef-menu-center">
+                <div class="qodef-vertical-align-containers">
+                    <div class="qodef-position-left">
+                        <!--
+				 -->
+                        <div class="qodef-position-left-inner">
+                            <div class="qodef-logo-wrapper">
+                                <a itemprop="url" href="https://iberiatoursplus.ge/" style="height: 84px">
+                                    <img itemprop="image" class="qodef-normal-logo"
+                                        src="assets/Images/download-removebg-preview.png" alt="logo" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qodef-position-center">
+                        <!--
+					 -->
+                        <div class="qodef-position-center-inner">
+                            <nav class="qodef-main-menu qodef-drop-down qodef-default-nav">
+                                <ul id="menu-main-menu" class="clearfix">
+                                    <li id="nav-menu-item-5339"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page narrow">
+                                        <a href="https://iberiatoursplus.ge/main-home/" class=""><span
+                                                class="item_outer"><span class="item_text">Home</span></span></a>
+                                    </li>
+                                    <li id="nav-menu-item-5337"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-469 current_page_item menu-item-has-children qodef-active-item has_sub narrow">
+                                        <a href="https://iberiatoursplus.ge/about-us/" class="current"><span
+                                                class="item_outer"><span class="item_text">About Us</span><i
+                                                    class="qodef-menu-arrow arrow_carrot-right"></i></span></a>
+                                        <div class="second">
+                                            <div class="inner">
+                                                <ul>
+                                                    <li id="nav-menu-item-5424"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page">
+                                                        <a href="https://iberiatoursplus.ge/elements/clients/"
+                                                            class=""><span class="item_outer"><span
+                                                                    class="item_text">Partners</span></span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="nav-menu-item-5429"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has_sub narrow">
+                                        <a href="https://iberiatoursplus.ge/standard-tour-list/" class=""><span
+                                                class="item_outer"><span class="item_text">Tours</span><i
+                                                    class="qodef-menu-arrow arrow_carrot-right"></i></span></a>
+                                        <div class="second">
+                                            <div class="inner">
+                                                <ul>
+                                                    <li id="nav-menu-item-5372"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-tour-item">
+                                                        <a href="https://iberiatoursplus.ge/tour-item/sydney-opera/"
+                                                            class=""><span class="item_outer"><span
+                                                                    class="item_text">Tour Item</span></span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="nav-menu-item-5380"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has_sub narrow">
+                                        <a href="https://iberiatoursplus.ge/destination-list/" class=""><span
+                                                class="item_outer"><span class="item_text">Hotels</span><i
+                                                    class="qodef-menu-arrow arrow_carrot-right"></i></span></a>
+                                        <div class="second">
+                                            <div class="inner">
+                                                <ul>
+                                                    <li id="nav-menu-item-5314"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-destinations">
+                                                        <a href="https://iberiatoursplus.ge/destinations/taiwan/"
+                                                            class=""><span class="item_outer"><span
+                                                                    class="item_text">Destination Item</span></span></a>
+                                                    </li>
+                                                    <li id="nav-menu-item-5428"
+                                                        class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                        <a href="https://iberiatoursplus.ge/destinations/taiwan/"
+                                                            class=""><span class="item_outer"><span
+                                                                    class="item_text">asas</span></span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="nav-menu-item-5342"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page narrow">
+                                        <a href="https://iberiatoursplus.ge/contact-us/" class=""><span
+                                                class="item_outer"><span class="item_text">Contact Us</span></span></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="qodef-position-right">
+                        <!--
+				 -->
+                        <div class="qodef-position-right-inner margin-top">
+                            <a style="margin: 0 20px 0 0"
+                                class="qodef-search-opener qodef-icon-has-hover qodef-search-opener-svg-path"
+                                href="javascript:void(0)">
+                                <span class="qodef-search-opener-wrapper">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </a>
+                            <div id="search-form-container">
+                                <form id="search-form" action="">
+                                    <i class="fa-solid fa-xmark close-icon"></i>
+                                    <input type="text" placeholder="Search...">
+                                    <button type="submit">find now</button>
+                                </form>
+                            </div>
+                            <a class="qodef-side-menu-button-opener qodef-icon-has-hover qodef-side-menu-button-opener-svg-path"
+                                href="javascript:void(0)">
+                                <span class="qodef-side-menu-icon">
+                                    <svg class="qodef-setsail-burger" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+                                        height="20px" viewBox="0 0 26 20" enable-background="new 0 0 26 20"
+                                        xml:space="preserve">
+                                        <rect x="10.5" width="13.7" height="2.4"></rect>
+                                        <rect x="8" y="8.8" width="16.2" height="2.4"></rect>
+                                        <rect x="1.7" y="17.6" width="22.5" height="2.4"></rect>
+                                    </svg>
+                                </span>
+                            </a>
+                            <section class="qodef-side-menu ps ps--active-y">
+                                <a class="qodef-close-side-menu qodef-close-side-menu-svg-path" href="#"><i
+                                        class="fa-solid fa-xmark close-icon"></i></a>
+                                <div class="widget qodef-separator-widget">
+                                    <div
+                                        class="qodef-separator-holder clearfix  qodef-separator-center qodef-separator-normal">
+                                        <div class="qodef-separator" style="border-style: solid;margin-top: 13px"></div>
+                                    </div>
+                                </div>
+                                <div id="media_image-4" class="widget qodef-sidearea widget_media_image"><img
+                                        width="301" height="168"
+                                        src="https://iberiatoursplus.ge/wp-content/uploads/2018/09/download-removebg-preview.png"
+                                        class="image wp-image-5407  attachment-full size-full" alt=""
+                                        style="max-width: 100%; height: auto;" decoding="async" fetchpriority="high">
+                                </div>
+                                <div class="widget qodef-separator-widget">
+                                    <div
+                                        class="qodef-separator-holder clearfix  qodef-separator-center qodef-separator-normal">
+                                        <div class="qodef-separator" style="border-style: solid;margin-top: 7px"></div>
+                                    </div>
+                                </div>
+                                <div id="media_image-7" class="widget qodef-sidearea widget_media_image"><img
+                                        width="282" height="63"
+                                        src="https://iberiatoursplus.ge/wp-content/uploads/2018/09/sidearea-img-2.png"
+                                        class="image wp-image-294  attachment-full size-full" alt="s"
+                                        style="max-width: 100%; height: auto;" decoding="async"></div>
+                                <div class="widget qodef-separator-widget">
+                                    <div
+                                        class="qodef-separator-holder clearfix  qodef-separator-center qodef-separator-normal">
+                                        <div class="qodef-separator" style="border-style: solid;margin-top: 40px"></div>
+                                    </div>
+                                </div>
+                                <div id="media_image-5" class="widget qodef-sidearea widget_media_image"><a
+                                        href="http://setsail.select-themes.com/contact-us/"><img width="385"
+                                            height="237"
+                                            src="https://iberiatoursplus.ge/wp-content/uploads/2018/09/sidearea-img.jpg"
+                                            class="image wp-image-4654 qodef-image-with-shadow attachment-full size-full"
+                                            alt="f" style="max-width: 100%; height: auto;" decoding="async"
+                                            srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/09/sidearea-img.jpg 385w, https://iberiatoursplus.ge/wp-content/uploads/2018/09/sidearea-img-300x185.jpg 300w"
+                                            sizes="(max-width: 385px) 100vw, 385px"></a></div>
+                                <div class="widget qodef-separator-widget">
+                                    <div
+                                        class="qodef-separator-holder clearfix  qodef-separator-center qodef-separator-normal">
+                                        <div class="qodef-separator" style="border-style: solid;margin-top: 15px"></div>
+                                    </div>
+                                </div>
+                                <div id="text-5" class="widget qodef-sidearea widget_text">
+                                    <div class="textwidget">
+                                        <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipis
+                                            cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme
+                                            natoque</p>
+                                    </div>
+                                </div>
+                                <div class="widget qodef-separator-widget">
+                                    <div
+                                        class="qodef-separator-holder clearfix  qodef-separator-center qodef-separator-normal">
+                                        <div class="qodef-separator" style="border-style: solid;margin-top: 25px"></div>
+                                    </div>
+                                </div>
+                                <div id="search-3" class="widget qodef-sidearea widget_search">
+                                    <div class="qodef-widget-title-holder">
+                                        <h5 class="qodef-widget-title">Find Your Destination</h5>
+                                    </div>
+                                    <form role="search" method="get" class="qodef-searchform searchform"
+                                        id="searchform-427" action="https://iberiatoursplus.ge/">
+                                        <label class="screen-reader-text">Search for:</label>
+                                        <div class="input-holder clearfix">
+                                            <input type="search" class="search-field" placeholder="Search..." value=""
+                                                name="s" title="Search for:">
+                                            <button type="submit" class="qodef-search-submit"><span aria-hidden="true"
+                                                    class="qodef-icon-font-elegant icon_search "><i
+                                                        class="fa-solid fa-magnifying-glass"></i></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="widget qodef-separator-widget">
+                                    <div
+                                        class="qodef-separator-holder clearfix  qodef-separator-center qodef-separator-normal">
+                                        <div class="qodef-separator" style="border-style: solid;margin-top: 30px"></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="widget qodef-social-icons-group-widget qodef-circle-icons text-align-center">
+                                    <div class="qodef-widget-title-holder">
+                                        <h5 class="qodef-widget-title">Follow Me</h5>
+                                    </div> <a class="qodef-social-icon-widget-holder qodef-icon-has-hover"
+                                        style="font-size: 16px;margin: 18px 7px -9px 0;"
+                                        href="https://twitter.com/SelectThemes?lang=en" target="_blank">
+                                        <span class="qodef-social-icon-widget fab fa-twitter"></span> </a>
+                                    <a class="qodef-social-icon-widget-holder qodef-icon-has-hover"
+                                        style="font-size: 16px;margin: 18px 7px -9px 0;"
+                                        href="https://www.pinterest.com/selectthemes/" target="_blank">
+                                        <span class="qodef-social-icon-widget fab fa-pinterest-p"></span> </a>
+                                    <a class="qodef-social-icon-widget-holder qodef-icon-has-hover"
+                                        style="font-size: 16px;margin: 18px 7px -9px 0;"
+                                        href="https://www.facebook.com/select.themes.7" target="_blank">
+                                        <span class="qodef-social-icon-widget fab fa-facebook-f"></span> </a>
+                                    <a class="qodef-social-icon-widget-holder qodef-icon-has-hover"
+                                        style="font-size: 16px;margin: 18px 7px -9px 0;"
+                                        href="https://www.instagram.com/selectthemes/" target="_blank">
+                                        <span class="qodef-social-icon-widget fab fa-instagram"></span> </a>
+                                </div>
+                                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <a id="qodef-back-to-top" href="#" class="on">
+            <span class="qodef-btt-text">TOP</span>
+        </a>
+        <!-- Header End -->
+        <!-- Mobile Header Start -->
+        <!-- 
+      <header class="qodef-mobile-header" style="">
+        <div class="qodef-mobile-header-inner">
+          <div class="qodef-mobile-header-holder">
+            <div class="qodef-grid">
+              <div class="qodef-vertical-align-containers">
+                <div class="qodef-vertical-align-containers">
+                  <div class="qodef-position-left">
+                    <div class="qodef-position-left-inner">
+                      <div
+                        class="qodef-mobile-menu-opener qodef-mobile-menu-opener-svg-path"
+                      >
+                        <a href="javascript:void(0)">
+                          <span class="qodef-mobile-menu-icon">
+                            <svg
+                              class="qodef-setsail-burger"
+                              version="1.1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              x="0px"
+                              y="0px"
+                              width="19px"
+                              height="17px"
+                              viewBox="0 0 26 20"
+                              enable-background="new 0 0 26 20"
+                              xml:space="preserve"
+                            >
+                              <rect x="10.5" width="13.7" height="2.4"></rect>
+                              <rect
+                                x="8"
+                                y="8.8"
+                                width="16.2"
+                                height="2.4"
+                              ></rect>
+                              <rect
+                                x="1.7"
+                                y="17.6"
+                                width="22.5"
+                                height="2.4"
+                              ></rect>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qodef-position-center">
+                    <div class="qodef-position-center-inner">
+                      <div class="qodef-mobile-logo-wrapper">
+                        <a
+                          itemprop="url"
+                          href="https://iberiatoursplus.ge/"
+                          style="height: 36px"
+                        >
+                          <img
+                            itemprop="image"
+                            src="http://setsail.select-themes.com/wp-content/uploads/2018/09/logo-mobile-img.png"
+                            width="230"
+                            height="73"
+                            alt="Mobile Logo"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qodef-position-right">
+                    <div class="qodef-position-right-inner">
+                      <div
+                        class="widget qodef-login-register-widget qodef-user-not-logged-in"
+                      >
+                        <a href="#" class="qodef-login-opener">
+                          <svg
+                            version="1.1"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 23 23"
+                            enable-background="new 0 0 23 23"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <path
+                                fill="currentColor"
+                                d="M11.5,14.1c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C15.5,12.3,13.7,14.1,11.5,14.1z M11.5,7.3
+            c-1.6,0-2.8,1.3-2.8,2.8c0,1.6,1.3,2.8,2.8,2.8s2.8-1.3,2.8-2.8C14.3,8.5,13,7.3,11.5,7.3z"
+                              ></path>
+                              <path
+                                fill="currentColor"
+                                d="M11.5,23c-3.1,0-5.9-1.2-8.1-3.4c-2.2-2.2-3.4-5-3.4-8.1s1.2-5.9,3.4-8.1c2.2-2.2,5-3.4,8.1-3.4
+            s5.9,1.2,8.1,3.4c2.2,2.2,3.4,5,3.4,8.1s-1.2,5.9-3.4,8.1C17.4,21.8,14.5,23,11.5,23z M11.5,1.2C5.8,1.2,1.2,5.9,1.2,11.5
+            s4.6,10.3,10.3,10.3s10.3-4.6,10.3-10.3S17.1,1.2,11.5,1.2z"
+                              ></path>
+                              <path
+                                fill="currentColor"
+                                d="M11.5,23c-1.5,0-2.9-0.3-4.2-0.8c-0.2-0.1-0.4-0.3-0.4-0.6v-5.3c0-1.8,1.5-3.3,3.3-3.3h2.6
+            c1.8,0,3.3,1.5,3.3,3.3v5.3c0,0.2-0.1,0.5-0.4,0.6C14.4,22.7,12.9,23,11.5,23z M8.1,21.2c1.1,0.4,2.2,0.6,3.4,0.6s2.3-0.2,3.4-0.6
+            v-4.9c0-1.2-0.9-2.1-2.1-2.1h-2.6c-1.2,0-2.1,0.9-2.1,2.1V21.2z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav
+            class="qodef-mobile-nav"
+            role="navigation"
+            aria-label="Mobile Menu"
+            style=""
+          >
+            <div class="qodef-grid">
+              <ul id="menu-main-menu-2" class="">
+                <li
+                  id="mobile-menu-item-5339"
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="https://iberiatoursplus.ge/main-home/" class=""
+                    ><span>Home</span></a
+                  >
+                </li>
+                <li
+                  id="mobile-menu-item-5337"
+                  class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-469 current_page_item menu-item-has-children qodef-active-item has_sub"
+                >
+                  <a href="https://iberiatoursplus.ge/about-us/" class="current"
+                    ><span>About Us</span></a
+                  ><span class="mobile_arrow"
+                    ><i class="qodef-sub-arrow arrow_carrot-right"></i
+                  ></span>
+                  <ul class="sub_menu">
+                    <li
+                      id="mobile-menu-item-5424"
+                      class="menu-item menu-item-type-post_type menu-item-object-page"
+                    >
+                      <a
+                        href="https://iberiatoursplus.ge/elements/clients/"
+                        class=""
+                        ><span>Partners</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  id="mobile-menu-item-5429"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has_sub"
+                >
+                  <a
+                    href="https://iberiatoursplus.ge/standard-tour-list/"
+                    class=""
+                    ><span>Tours</span></a
+                  ><span class="mobile_arrow"
+                    ><i class="qodef-sub-arrow arrow_carrot-right"></i
+                  ></span>
+                  <ul class="sub_menu">
+                    <li
+                      id="mobile-menu-item-5372"
+                      class="menu-item menu-item-type-post_type menu-item-object-tour-item"
+                    >
+                      <a
+                        href="https://iberiatoursplus.ge/tour-item/sydney-opera/"
+                        class=""
+                        ><span>Tour Item</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  id="mobile-menu-item-5380"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has_sub"
+                >
+                  <a
+                    href="https://iberiatoursplus.ge/destination-list/"
+                    class=""
+                    ><span>Hotels</span></a
+                  ><span class="mobile_arrow"
+                    ><i class="qodef-sub-arrow arrow_carrot-right"></i
+                  ></span>
+                  <ul class="sub_menu">
+                    <li
+                      id="mobile-menu-item-5314"
+                      class="menu-item menu-item-type-post_type menu-item-object-destinations"
+                    >
+                      <a
+                        href="https://iberiatoursplus.ge/destinations/taiwan/"
+                        class=""
+                        ><span>Destination Item</span></a
+                      >
+                    </li>
+                    <li
+                      id="mobile-menu-item-5428"
+                      class="menu-item menu-item-type-custom menu-item-object-custom"
+                    >
+                      <a
+                        href="https://iberiatoursplus.ge/destinations/taiwan/"
+                        class=""
+                        ><span>asas</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  id="mobile-menu-item-5342"
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="https://iberiatoursplus.ge/contact-us/" class=""
+                    ><span>Contact Us</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header> -->
+        <!-- Mobile Header End -->
+
+        <div class="qodef-content">
+            <div class="qodef-content-inner">
+                <div class="qodef-title-holder qodef-centered-type qodef-title-va-header-bottom qodef-has-bg-image qodef-bg-parallax"
+                    style="height: 520px; background-color: rgb(248, 248, 248); background-image: url(&quot;http://setsail.select-themes.com/wp-content/uploads/2018/09/tour-list-title-img.jpg&quot;); background-position: center 0px;"
+                    data-height="520">
+                    <div class="qodef-title-image">
+                        <img itemprop="image"
+                            src="http://setsail.select-themes.com/wp-content/uploads/2018/09/tour-list-title-img.jpg"
+                            alt="s">
+                    </div>
+                    <div class="qodef-title-wrapper" style="height: 520px">
+                        <div class="qodef-title-inner">
+                            <div class="qodef-grid">
+                                <h1 class="qodef-page-title entry-title">Destination List</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qodef-tours-search-page-holder">
+                    <div class="qodef-container" style="max-width: 1300px; margin: auto;">
+                        <div class="qodef-container-inner clearfix">
+                            <div class="qodef-grid-row ">
+                                <div class="qodef-page-content-holder qodef-grid-col-12">
+                                    <div class="wpb-content-wrapper">
+                                        <div class="vc_row wpb_row vc_row-fluid">
+                                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                                <div class="vc_column-inner">
+                                                    <div class="wpb_wrapper">
+                                                        <div
+                                                            class="qodef-tours-destination-holder qodef-destination-standard qodef-grid-list qodef-disable-bottom-space qodef-three-columns qodef-extra-large-space qodef-has-rounded-style qodef-has-overlay-style">
+                                                            <div class="qodef-td-inner qodef-outer-space">
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img decoding="async" width="800"
+                                                                                height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-2.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="s"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-2.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-2-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-2-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-2-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-2-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-2-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-2-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/taiwan/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Taiwan</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-5.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="d"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-5.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-5-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-5-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-5-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-5-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-5-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-5-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/greece/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Greece</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-4.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="d"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-4.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-4-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-4-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-4-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-4-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-4-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-4-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/holland/"></a>
+                                                                        <div
+                                                                            class="qodef-destination-has-featured-mark">
+                                                                            <span aria-hidden="true"
+                                                                                class="qodef-icon-font-elegant icon_star "><i
+                                                                                    class="fa-solid fa-star"></i></span>
+                                                                        </div>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Holland</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-1.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="s"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-1.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-1-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-1-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-1-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-1-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-1-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-1-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/spain/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Spain</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="1300" height="1300"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/09/destionations-1-masonry-3-1.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="s"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/09/destionations-1-masonry-3-1.jpg 1300w, https://iberiatoursplus.ge/wp-content/uploads/2018/09/destionations-1-masonry-3-1-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/09/destionations-1-masonry-3-1-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/09/destionations-1-masonry-3-1-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/09/destionations-1-masonry-3-1-1024x1024.jpg 1024w, https://iberiatoursplus.ge/wp-content/uploads/2018/09/destionations-1-masonry-3-1-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/09/destionations-1-masonry-3-1-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/09/destionations-1-masonry-3-1-650x650.jpg 650w"
+                                                                                sizes="(max-width: 1300px) 100vw, 1300px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/australia/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Australia
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-3.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="s"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-3.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-3-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-3-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-3-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-3-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-3-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-3-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/bali/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Bali</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-12.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="d"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-12.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-12-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-12-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-12-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-12-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-12-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-12-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/japan/"></a>
+                                                                        <div
+                                                                            class="qodef-destination-has-featured-mark">
+                                                                            <span aria-hidden="true"
+                                                                                class="qodef-icon-font-elegant icon_star "><i
+                                                                                    class="fa-solid fa-star"></i></span>
+                                                                        </div>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Japan</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-13.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="d"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-13.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-13-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-13-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-13-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-13-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-13-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-13-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/new-york/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">New York
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-14.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="d"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-14.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-14-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-14-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-14-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-14-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-14-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-14-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/egypt/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Egypt</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-15.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="d"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-15.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-15-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-15-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-15-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-15-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-15-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-15-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/cuba/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Cuba</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-16.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="d"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-16.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-16-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-16-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-16-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-16-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-16-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-16-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/russia/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Russia</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-td-item qodef-item-space">
+                                                                    <div class="qodef-tdi-content">
+                                                                        <div class="qodef-tdi-image">
+                                                                            <img loading="lazy" decoding="async"
+                                                                                width="800" height="800"
+                                                                                src="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-6.jpg"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="d"
+                                                                                srcset="https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-6.jpg 800w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-6-300x300.jpg 300w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-6-100x100.jpg 100w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-6-600x600.jpg 600w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-6-150x150.jpg 150w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-6-768x768.jpg 768w, https://iberiatoursplus.ge/wp-content/uploads/2018/10/destinations-featured-img-6-650x650.jpg 650w"
+                                                                                sizes="(max-width: 800px) 100vw, 800px">
+                                                                        </div>
+                                                                        <a class="qodef-tdi-content-link"
+                                                                            href="https://iberiatoursplus.ge/destinations/italy/"></a>
+                                                                        <div class="qodef-tdi-text">
+                                                                            <div class="qodef-tdi-text-inner">
+                                                                                <h3 class="qodef-tdi-title">Italy</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vc_row wpb_row vc_row-fluid vc_custom_1536678050107" style="background-color: #3fd0d4">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div
+                                    class="qodef-call-to-action-holder qodef-normal-layout qodef-content-in-grid qodef-three-quarters-columns">
+                                    <div class="qodef-cta-inner qodef-grid qodef-banner">
+                                        <div class="qodef-cta-text-holder">
+                                            <div class="qodef-cta-text">
+                                                <h4 style="color: #fff">
+                                                    Subscribe Now and Quench Your Wanderlust!
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="qodef-cta-button-holder">
+                                            <div class="qodef-cta-button">
+                                                <a itemprop="url" href="http://setsail.select-themes.com/my-account/"
+                                                    target="_self" style="
+                                        color: #222222;
+                                        background-color: #ffffff;
+                                        float: right;
+                                      " class="qodef-btn qodef-btn-large qodef-btn-solid qodef-btn-custom-hover-bg qodef-btn-custom-hover-color"
+                                                    data-hover-color="#ffffff" data-hover-bg-color="#23a9af">
+                                                    <span class="qodef-btn-text">Join Now</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- close div.content_inner -->
+        </div>
+        <!-- close div.content -->
+        <footer class="qodef-page-footer">
+            <div class="qodef-footer-top-holder">
+                <div class="qodef-footer-top-inner qodef-full-width">
+                    <div class="qodef-grid-row qodef-footer-top-alignment-left">
+                        <div class="qodef-column-content qodef-grid-col-3">
+                            <div id="media_image-2" class="widget qodef-footer-column-1 widget_media_image">
+                                <img width="301" height="168"
+                                    src="https://iberiatoursplus.ge/wp-content/uploads/2018/09/download-removebg-preview.png"
+                                    class="image wp-image-5407 attachment-full size-full" alt=""
+                                    style="max-width: 100%; height: auto" decoding="async" loading="lazy" />
+                            </div>
+                            <a class="qodef-icon-widget-holder" href="mailto:director@iberiatoursplis.ge" target="_self"
+                                style="margin: 0 0 4px 0">
+                                <span class="qodef-icon-element icon_mail_alt" style="font-size: 14px"></span><i
+                                    class="fa-regular fa-envelope"></i></i>
+                                <span class="qodef-icon-text">director@iberiatoursplis.ge</span>
+                            </a>
+
+                            <a class="qodef-icon-widget-holder" href="tel:+995577477288" target="_self"
+                                style="margin: 0 0 4px 0">
+                                <span class="qodef-icon-element icon_phone" style="font-size: 14px"></span><i
+                                    class="fa-solid fa-phone"></i>
+                                <span class="qodef-icon-text">+995 557 47 72 88</span>
+                            </a>
+
+                            <a class="qodef-icon-widget-holder" href="#" target="_blank">
+                                <span class="qodef-icon-element icon_pin_alt" style="font-size: 14px"></span><i
+                                    class="fa-solid fa-location-dot"></i>
+                                <span class="qodef-icon-text">Georgia</span>
+                            </a>
+                        </div>
+                        <div class="qodef-column-content qodef-grid-col-3">
+                            <div class="widget qodef-blog-list-widget">
+                                <div class="qodef-widget-title-holder">
+                                    <h5 class="qodef-widget-title" style="margin-bottom: 26px">
+                                        Our Recent Posts
+                                    </h5>
+                                </div>
+                                <div class="qodef-blog-list-holder qodef-grid-list qodef-disable-bottom-space qodef-bl-minimal qodef-one-columns qodef-normal-space qodef-bl-pag-no-pagination"
+                                    data-type="minimal" data-number-of-posts="3" data-number-of-columns="one"
+                                    data-space-between-items="normal" data-orderby="date" data-order="ASC"
+                                    data-image-size="thumbnail" data-title-tag="h6" data-excerpt-length="40"
+                                    data-post-info-image="yes" data-pagination-type="no-pagination"
+                                    data-widget-simple="no" data-max-num-pages="10" data-next-page="2">
+                                    <div class="qodef-bl-wrapper qodef-outer-space">
+                                        <ul class="qodef-blog-list">
+                                            <li class="qodef-bl-item qodef-item-space clearfix">
+                                                <div class="qodef-bli-inner">
+                                                    <div class="qodef-bli-content">
+                                                        <h6 itemprop="name" class="entry-title qodef-post-title">
+                                                            <a itemprop="url"
+                                                                href="https://iberiatoursplus.ge/visit-thailand-bali-and-china/"
+                                                                title="Visit Thailand, Bali And China">
+                                                                Visit Thailand, Bali And China
+                                                            </a>
+                                                        </h6>
+                                                        <div itemprop="dateCreated"
+                                                            class="qodef-post-info-date entry-date published updated">
+                                                            <a itemprop="url"
+                                                                href="https://iberiatoursplus.ge/2016/09/">
+                                                                September 7, 2016
+                                                            </a>
+                                                            <meta itemprop="interactionCount"
+                                                                content="UserComments: 0" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="qodef-bl-item qodef-item-space clearfix">
+                                                <div class="qodef-bli-inner">
+                                                    <div class="qodef-bli-content">
+                                                        <h6 itemprop="name" class="entry-title qodef-post-title">
+                                                            <a itemprop="url"
+                                                                href="https://iberiatoursplus.ge/the-sound-of-our-jungle/"
+                                                                title="The Sound Of Our Jungle">
+                                                                The Sound Of Our Jungle
+                                                            </a>
+                                                        </h6>
+                                                        <div itemprop="dateCreated"
+                                                            class="qodef-post-info-date entry-date published updated">
+                                                            <a itemprop="url"
+                                                                href="https://iberiatoursplus.ge/2016/09/">
+                                                                September 7, 2016
+                                                            </a>
+                                                            <meta itemprop="interactionCount"
+                                                                content="UserComments: 0" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="qodef-bl-item qodef-item-space clearfix">
+                                                <div class="qodef-bli-inner">
+                                                    <div class="qodef-bli-content">
+                                                        <h6 itemprop="name" class="entry-title qodef-post-title">
+                                                            <a itemprop="url"
+                                                                href="https://iberiatoursplus.ge/new-year-new-resolutions/"
+                                                                title="New Year, New Resolutions!">
+                                                                New Year, New Resolutions!
+                                                            </a>
+                                                        </h6>
+                                                        <div itemprop="dateCreated"
+                                                            class="qodef-post-info-date entry-date published updated">
+                                                            <a itemprop="url"
+                                                                href="https://iberiatoursplus.ge/2016/09/">
+                                                                September 7, 2016
+                                                            </a>
+                                                            <meta itemprop="interactionCount"
+                                                                content="UserComments: 0" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qodef-column-content qodef-grid-col-3">
+                            <div id="text-3" class="widget qodef-footer-column-3 widget_text">
+                                <div class="qodef-widget-title-holder">
+                                    <h5 class="qodef-widget-title">
+                                        Subscribe to our Newsletter
+                                    </h5>
+                                </div>
+                                <div class="textwidget">
+                                    <p>
+                                        <span style="color: #a9a9a9">Etiam rhoncus. Maecenas temp us, tellus eget
+                                            condimentum rho</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="widget qodef-contact-form-7-widget">
+                                <div class="wpcf7 js" id="wpcf7-f800-o1" lang="en-US" dir="ltr">
+                                    <div class="screen-reader-response">
+                                        <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                        <ul></ul>
+                                    </div>
+                                    <form action="/about-us/#wpcf7-f800-o1" method="post"
+                                        class="wpcf7-form cf7_custom_style_3 init" aria-label="Contact form"
+                                        novalidate="novalidate" data-status="init">
+                                        <div style="display: none">
+                                            <input type="hidden" name="_wpcf7" value="800" />
+                                            <input type="hidden" name="_wpcf7_version" value="5.8.2" />
+                                            <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f800-o1" />
+                                            <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                            <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                                        </div>
+                                        <div class="qodef-custom-nlf-footer">
+                                            <div class="qodef-grid-row qodef-grid-normal-gutter">
+                                                <div>
+                                                    <p>
+                                                        <span
+                                                            class="qodef-newsletter-icon qodef-newsletter-name-icon icon_profile"><i
+                                                                class="fa-solid fa-user"></i></span><span
+                                                            class="wpcf7-form-control-wrap" data-name="your-name"><input
+                                                                size="40"
+                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                aria-required="true" aria-invalid="false"
+                                                                placeholder="Name" value="" type="text"
+                                                                name="your-name" /></span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        <span
+                                                            class="qodef-newsletter-icon qodef-newsletter-email-icon icon_mail_alt"><i
+                                                                class="fa-regular fa-envelope"></i></span><span
+                                                            class="wpcf7-form-control-wrap"
+                                                            data-name="your-email"><input size="40"
+                                                                class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                                                                aria-required="true" aria-invalid="false"
+                                                                placeholder="Email" value="" type="email"
+                                                                name="your-email" /></span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
+                                                    value="Subscribe" /><span class="wpcf7-spinner"></span>
+                                            </p>
+                                        </div>
+                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qodef-column-content qodef-grid-col-3">
+                            <div id="text-4" class="widget qodef-footer-column-4 widget_text">
+                                <div class="qodef-widget-title-holder">
+                                    <h5 class="qodef-widget-title">Partners</h5>
+                                </div>
+                                <div class="textwidget">
+                                    <p>
+                                        <span style="color: #a9a9a9">პარტნიორი კომპანიები</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="qodef_instagram_widget-2"
+                                class="widget qodef-footer-column-4 widget_qodef_instagram_widget"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="qodef-footer-bottom-holder">
+                <div class="qodef-footer-bottom-inner qodef-full-width">
+                    <div class="qodef-grid-row">
+                        <div class="qodef-grid-col-4"></div>
+                        <div class="qodef-grid-col-4">
+                            <div id="text-7" class="widget qodef-footer-bottom-column-2 widget_text">
+                                <div class="textwidget">
+                                    <p style="
+                        font-size: 13px;
+                        text-align: center;
+                        color: #a9a9a9;
+                      ">
+                                        Powered by @
+                                        <a href="https://themeforest.net/user/select-themes" target="_blank"
+                                            rel="noopener">Select Themes 2018</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qodef-grid-col-4"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="qodef-login-register-holder" style="display: none;">
+            <div class="qodef-login-register-content ui-tabs ui-corner-all ui-widget ui-widget-content">
+                <ul role="tablist"
+                    class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+                    <li role="tab" tabindex="0"
+                        class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
+                        aria-controls="qodef-login-content" aria-labelledby="ui-id-1" aria-selected="true"
+                        aria-expanded="true"><a href="#qodef-login-content" tabindex="-1" class="ui-tabs-anchor"
+                            id="ui-id-1">Login</a></li>
+                    <li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab"
+                        aria-controls="qodef-register-content" aria-labelledby="ui-id-2" aria-selected="false"
+                        aria-expanded="false"><a href="#qodef-register-content" tabindex="-1" class="ui-tabs-anchor"
+                            id="ui-id-2">Register</a></li>
+                </ul>
+                <div class="qodef-login-content-inner ui-tabs-panel ui-corner-bottom ui-widget-content"
+                    id="qodef-login-content" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+                    <div class="qodef-wp-login-holder">
+                        <div class="qodef-social-login-holder">
+                            <div class="qodef-social-login-holder-inner">
+                                <form method="post" class="qodef-login-form">
+                                    <h4 class="qodef-login-title">Sign In Here!</h4>
+                                    <p class="qodef-login-description">Log into your account in just a
+                                        few simple steps.</p>
+                                    <fieldset>
+                                        <div>
+                                            <span class="qodef-login-icon icon_profile"><i
+                                                    class="fa-solid fa-user"></i></span>
+                                            <input type="text" name="user_login_name" id="user_login_name"
+                                                placeholder="User Name" value="" required="" pattern=".{3,}"
+                                                title="Three or more characters">
+                                        </div>
+                                        <div>
+                                            <span class="qodef-login-icon icon_lock_alt"><i
+                                                    class="fa-solid fa-lock"></i></span>
+                                            <input type="password" name="user_login_password" id="user_login_password"
+                                                placeholder="Password" value="" required="">
+                                        </div>
+                                        <div class="qodef-lost-pass-remember-holder clearfix">
+                                            <span class="qodef-login-remember">
+                                                <input name="rememberme" value="forever" id="rememberme"
+                                                    type="checkbox">
+                                                <label for="rememberme" class="qodef-checbox-label">Remember me</label>
+                                            </span>
+                                        </div>
+                                        <input type="hidden" name="redirect" id="redirect" value="">
+                                        <div class="qodef-login-button-holder">
+                                            <a href="https://iberiatoursplus.ge/my-account/lost-password/"
+                                                class="qodef-login-action-btn" data-el="#qodef-reset-pass-content"
+                                                data-title="Lost Password?">Lost Your password?</a>
+                                            <button type="submit" class="qodef-btn qodef-btn-medium qodef-btn-solid">
+                                                <span class="qodef-btn-text">Sign in</span> </button>
+                                            <input type="hidden" id="qodef-login-security" name="qodef-login-security"
+                                                value="e7a3a2624e"><input type="hidden" name="_wp_http_referer"
+                                                value="/about-us/"> </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="qodef-login-form-social-login">
+                                <div class="qodef-login-social-title">
+                                    Sign in with Facebook or Google+ </div>
+                            </div>
+                            <div class="qodef-login-social-networks">
+                                <form class="qodef-facebook-login-holder"><input type="hidden"
+                                        id="qodef_nonce_facebook_login_1596698470"
+                                        name="qodef_nonce_facebook_login_1596698470" value="abfd96b7cb"><input
+                                        type="hidden" name="_wp_http_referer" value="/about-us/"><button type="submit"
+                                        style="background-color: rgb(59, 89, 152); border-color: rgb(59, 89, 152);"
+                                        class="qodef-btn qodef-btn-small qodef-btn-solid qodef-btn-custom-hover-bg qodef-btn-custom-border-hover qodef-facebook-login"
+                                        data-hover-bg-color="#4363A5" data-hover-border-color="#4363A5">
+                                        <span class="qodef-btn-text">FACEBOOK</span> </button></form>
+                                <form class="qodef-google-login-holder">
+                                    <input type="hidden" id="qodef_nonce_google_login_1192073711"
+                                        name="qodef_nonce_google_login_1192073711" value="0be0dd98ff">
+                                    <input type="hidden" name="_wp_http_referer" value="/about-us/">
+                                    <button type="submit"
+                                        style="background-color: rgb(221, 75, 57); border-color: rgb(221, 75, 57);"
+                                        class="qodef-btn qodef-btn-small qodef-btn-solid qodef-btn-custom-hover-bg qodef-btn-custom-border-hover qodef-google-login"
+                                        data-hover-bg-color="#dd5543" data-hover-border-color="#dd5543">
+                                        <span class="qodef-btn-text">GOOGLE+</span> </button>
+                                </form>
+                            </div>
+                            <div class="qodef-membership-response-holder clearfix"></div>
+                            <script type="text/template" class="qodef-membership-response-template">
+                                <div class="qodef-membership-response <%= messageClass %> ">
+						<div class="qodef-membership-response-message">
+							<p><%= message %></p>
+						</div>
+					</div>
+				</script>
+                        </div>
+                    </div>
+                </div>
+                <div class="qodef-register-content-inner ui-tabs-panel ui-corner-bottom ui-widget-content"
+                    id="qodef-register-content" aria-labelledby="ui-id-2" role="tabpanel" aria-hidden="true"
+                    style="display: none;">
+                    <div class="qodef-wp-register-holder">
+                        <div class="qodef-register-notice">
+                            <h5 class="qodef-register-notice-title">You don't have permission to
+                                register</h5>
+                            <a href="#" class="qodef-login-action-btn" data-el="#qodef-login-content"
+                                data-title="LOGIN">LOGIN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/tours.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/js/jquery.prettyPhoto.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var originalZIndexes = {
+                backToTop: $('#qodef-back-to-top').css('z-index'),
+                titleHolder: $('.qodef-title-holder').css('z-index'),
+                pageHeader: $('.qodef-page-header').css('z-index'),
+                pageFooter: $('.qodef-page-footer').css('z-index'),
+                topBar: $('.qodef-top-bar').css('z-index')
+            };
+
+            $('#play-video').on('click', function (e) {
+                e.preventDefault();
+                $('#video-overlay').addClass('active');
+                $('#qodef-back-to-top').css('z-index', '-1');
+                $('.qodef-title-holder').css('z-index', '-1');
+                $('.qodef-page-header').css('z-index', '-1');
+                $('.qodef-page-footer').css('z-index', '-1');
+                $('.qodef-top-bar').css('z-index', '-1');
+            });
+
+            $('#video-overlay').on('click', function (e) {
+                if (e.target.id === 'video-overlay') {
+                    $(this).removeClass('active');
+                    $('#qodef-back-to-top').css('z-index', originalZIndexes.backToTop);
+                    $('.qodef-title-holder').css('z-index', originalZIndexes.titleHolder);
+                    $('.qodef-page-header').css('z-index', originalZIndexes.pageHeader);
+                    $('.qodef-page-footer').css('z-index', originalZIndexes.pageFooter);
+                    $('.qodef-top-bar').css('z-index', originalZIndexes.topBar);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

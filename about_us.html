@@ -26,6 +26,12 @@
             }
         }
 
+        @media (min-width: 768px) {
+            .vc_col-sm-12 {
+                width: 100%;
+            }
+        }
+
         ;
     </style>
 </head>
@@ -1931,6 +1937,19 @@
             });
         });
     </script>
+    <script>
+        $(window).scroll(function(){
+            if ($(window).scrollTop() >= 300) {
+                $('nav').addClass('fixed-header');
+                $('nav div').addClass('visible-title');
+            }
+            else {
+                $('nav').removeClass('fixed-header');
+                $('nav div').removeClass('visible-title');
+            }
+        });
+    </script>
+
 </body>
 
 </html>
